@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const NavigationStyled = styled.div``
+export const NavigationStyled = styled.div`
+color: blue
+`
