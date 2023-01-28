@@ -2,7 +2,8 @@
 import { AiOutlineUser } from 'react-icons/ai';
 import { ContactItemStyle, Btn, Text, Number } from './ContactItemStyle';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/operation';
+
+import { deleteContact } from 'redux/contacts/operation';
 
 export const ContactItem = ({ id, name, number,  }) => {
   const dispatch = useDispatch();

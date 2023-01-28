@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Form, Btn, Input, Label, Title } from './PhoneBookStyle';
 import { useSelector,useDispatch } from 'react-redux';
-import { getContacts } from 'redux/selectors';
-import { addContact } from 'redux/operation';
+import { getContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operation';
 
 export const PhoneBook = () => {
   const [name,setName] = useState('')
