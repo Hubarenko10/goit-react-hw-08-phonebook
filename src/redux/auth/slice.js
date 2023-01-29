@@ -22,7 +22,7 @@ state.isLoggedIn = false
 
 const refreshUserFullfilled = (state,action) => {
 state.user = action.payload
-state.isLoggedIn = true,
+state.isLoggedIn = true
 state.isRefreshing = false
 }
 
