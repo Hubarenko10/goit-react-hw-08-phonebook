@@ -1,6 +1,5 @@
 // import PropTypes from 'prop-types';
-
-import { ContactItemStyle, Btn, Text, Number } from './ContactItemStyle';
+import { ContactItemStyle, Text, Number } from './ContactItemStyle';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operation';
 import { CloseButton } from '@chakra-ui/react'
