@@ -1,9 +1,11 @@
 // import PropTypes from 'prop-types';
-import { AiOutlineUser } from 'react-icons/ai';
+
 import { ContactItemStyle, Btn, Text, Number } from './ContactItemStyle';
 import { useDispatch } from 'react-redux';
-
 import { deleteContact } from 'redux/contacts/operation';
+import { CloseButton } from '@chakra-ui/react'
+import { PhoneIcon } from '@chakra-ui/icons'
+
 
 export const ContactItem = ({ id, name, number,  }) => {
   const dispatch = useDispatch();
@@ -15,14 +17,11 @@ export const ContactItem = ({ id, name, number,  }) => {
   return (
     <ContactItemStyle>
       <Text>
-        <AiOutlineUser fill="red" /> {name}: <Number>{number}</Number>
+      <PhoneIcon mr={2}/>{name}: <Number>{number}</Number>
       </Text>
-      <Btn
-        type="button"
-        onClick={handleDeleteContact}
-      >
-        Delete
-      </Btn>
+      <CloseButton 
+      type="button"
+      onClick={handleDeleteContact}></CloseButton>
     </ContactItemStyle>
   );
 };

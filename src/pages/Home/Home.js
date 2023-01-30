@@ -5,7 +5,7 @@ import {Wrapper,Header} from './HomeStyled'
     <hr />
     <Wrapper>
       <Header>
-        Phone Book welcome page{' '}
+        Phonebook welcome page{' '}
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>

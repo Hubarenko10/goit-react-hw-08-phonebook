@@ -19,8 +19,9 @@ export const Input = styled.input`
 
 export const Header = styled.span`
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 10px;
   display: flex;
 `;
